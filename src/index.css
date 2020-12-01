@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.autosave {
+  border: 1px solid #42bfc7;
+  border-radius: 0.5em;
+  padding: 20px;
+}
+
+.header h4 {
+  color: #1d9988;
+}
+
+#autosave-heading {
+  color: blue;
+}
+
+.form-wrapper {
+  border: 1px solid brown;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.planner {
+}
+
+.result::before {
+  content: 'Income anually';
+  font-weight: 800;
+  display: inline;
+  width: 10px;
+  height: 10px;
+  padding-right: 50%;
+}
+
+.category {
+  display: block;
+  border-top: 1px dotted;
+  padding: 12px;
+  /* float: right; */
+  /* margin-left: 10%; */
+}
+
+.input-field {
+  display: inline;
+  /* position: */
+}
+
+.period-list {
+  display: inline;
+  /* position: */
+}
+
+.summary {
+  background-color: #0146f5;
+  border: 1px solid grey;
+}
+.summary h1 {
+  color: white;
+}
+
+.message {
+  background-color: white;
+  border: 1px solid grey;
+}
