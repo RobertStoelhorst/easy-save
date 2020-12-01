@@ -21,15 +21,17 @@ export const Planner = (props) => {
   const [otherIncome, setOtherIncome] = useState(0);
   const [otherPeriod, setOtherPeriod] = useState(52);
 
-  let incomeTotal = (
+  const calculateTotal = () => (
      Number(yourIncome * yourPeriod) + Number(partnerIncome * partnerPeriod) + Number(bonusIncome * bonusPeriod) + Number(savingsIncome * savingsPeriod) + Number(centerlinkIncome * centerlinkPeriod) + Number(familyIncome * familyPeriod) + Number(childSupportIncome * childSupportPeriod) + Number(otherIncome * otherPeriod)
    );
 
-   let [summaryTotal, setIncomeTotalState] = useState(incomeTotal)
+   props.updateIncome(calculateTotal());
+
+   let [summaryTotal, setIncomeTotalState] = useState(props.incomeTotal)
    console.log("this is state total", summaryTotal);
 
-   console.log("This is the incomeTotal", incomeTotal);
-   console.log("This is a test on dividing incomeTotal", incomeTotal / 2);
+   console.log("This is the incomeTotal", props.incomeTotal);
+   console.log("This is a test on dividing incomeTotal", props.incomeTotal / 2);
    console.log("This is yourIncome", yourIncome);
 
 
@@ -37,7 +39,7 @@ export const Planner = (props) => {
     <div className="form-wrapper">
       <div className="planner">
         <div className="income">
-          <p className="result">${incomeTotal} </p>
+          <p className="result">${props.incomeTotal} </p>
         </div>
           <form>
             <div className="category">
