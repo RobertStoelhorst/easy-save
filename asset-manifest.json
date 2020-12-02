@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/easy-save/static/css/main.ffe58c32.chunk.css",
-    "main.js": "/easy-save/static/js/main.8f7ae7e9.chunk.js",
-    "main.js.map": "/easy-save/static/js/main.8f7ae7e9.chunk.js.map",
+    "main.css": "/easy-save/static/css/main.fa4836c3.chunk.css",
+    "main.js": "/easy-save/static/js/main.6a9a2fad.chunk.js",
+    "main.js.map": "/easy-save/static/js/main.6a9a2fad.chunk.js.map",
     "runtime-main.js": "/easy-save/static/js/runtime-main.88c16234.js",
     "runtime-main.js.map": "/easy-save/static/js/runtime-main.88c16234.js.map",
     "static/js/2.5254d842.chunk.js": "/easy-save/static/js/2.5254d842.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.03c4558b.chunk.js": "/easy-save/static/js/3.03c4558b.chunk.js",
     "static/js/3.03c4558b.chunk.js.map": "/easy-save/static/js/3.03c4558b.chunk.js.map",
     "index.html": "/easy-save/index.html",
-    "static/css/main.ffe58c32.chunk.css.map": "/easy-save/static/css/main.ffe58c32.chunk.css.map",
+    "static/css/main.fa4836c3.chunk.css.map": "/easy-save/static/css/main.fa4836c3.chunk.css.map",
     "static/js/2.5254d842.chunk.js.LICENSE.txt": "/easy-save/static/js/2.5254d842.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.88c16234.js",
     "static/js/2.5254d842.chunk.js",
-    "static/css/main.ffe58c32.chunk.css",
-    "static/js/main.8f7ae7e9.chunk.js"
+    "static/css/main.fa4836c3.chunk.css",
+    "static/js/main.6a9a2fad.chunk.js"
   ]
 }
