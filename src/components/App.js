@@ -1,20 +1,33 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
 import Autosave from './Autosave';
-import { Planner } from './Planner';
+import { Income } from './Income';
 import { Summary } from './Summary';
+import { HomeUtils } from './Homeutils';
+import { Insurance } from './Insurance';
+import { Groceries } from './Groceries';
+import { Personal } from './Personal';
+import { Entertainment } from './Entertainment';
+import { Transport } from './Transport';
+import { Children } from './Children';
 
 function App() {
-
+const [active, setActive] = useState("");
 const [incomeTotal, setIncomeTotal] = useState(0);
 
   return (
     <div className="container">
       <div className="app-wrapper">
-        <h1>App</h1>
         <Header />
         <Autosave />
-        <Planner incomeTotal={incomeTotal} updateIncome={setIncomeTotal} />
+        <Income incomeTotal={incomeTotal} updateIncome={setIncomeTotal} />
+        <HomeUtils />
+        <Insurance />
+        <Groceries />
+        <Personal />
+        <Entertainment />
+        <Transport />
+        <Children />
         <Summary incomeTotal={incomeTotal} />
       </div>
     </div>

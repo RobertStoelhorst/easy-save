@@ -13,6 +13,14 @@ code {
 }
 
 .container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.app-wrapper {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -20,7 +28,7 @@ code {
 .autosave {
   border: 1px solid #42bfc7;
   border-radius: 0.5em;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .header h4 {
@@ -31,39 +39,71 @@ code {
   color: blue;
 }
 
-.form-wrapper {
-  border: 1px solid brown;
-  background-color: #f5f5f5;
-  padding: 10px;
+.result {
+  margin-left: 80vh;
 }
 
-.planner {
+.accordion-section {
+  display: flex;
+  flex-direction: column;
 }
 
-.result::before {
-  content: 'Income anually';
-  font-weight: 800;
-  display: inline;
-  width: 10px;
-  height: 10px;
-  padding-right: 50%;
+.accordion {
+  background-color: #efefef;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:hover,
+.active {
+  background-color: #ccc;
+}
+
+.accordion-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  /* max-height: 0px; */
+}
+
+.accordion-container {
+
 }
 
 .category {
-  display: block;
+  /* display: block;
   border-top: 1px dotted;
-  padding: 12px;
+  padding: 12px; */
   /* float: right; */
   /* margin-left: 10%; */
 }
 
 .input-field {
-  display: inline;
+  /* display: inline; */
   /* position: */
 }
 
 .period-list {
-  display: inline;
+  /* display: inline; */
   /* position: */
 }
 
