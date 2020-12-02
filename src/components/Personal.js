@@ -196,8 +196,8 @@ export const Personal = (props) => {
                 </div>
               <div className="category">
                 <label htmlFor="text">Pet care & vet</label>
-                  <input className="input-field" type="text" onChange={ (e) => setHobbieExpense(e.target.value) } placeholder="$0" />
-                  <select onChange={(e) => setHobbiePeriod(e.target.value)} className="period-list" name="" >
+                  <input className="input-field" type="text" onChange={ (e) => setPetExpense(e.target.value) } placeholder="$0" />
+                  <select onChange={(e) => setPetPeriod(e.target.value)} className="period-list" name="" >
                     <option value="52">Weekly</option>
                     <option value="26">Fortnightly</option>
                     <option value="12">Monthly</option>

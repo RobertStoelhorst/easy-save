@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Summary from '../components/Summary';
+// import Summary from '../components/Summary';
 import Chevron from '../components/Chevron';
 
 export const Income = (props) => {
@@ -41,7 +41,7 @@ export const Income = (props) => {
 
    props.updateIncome(calculateTotal());
 
-   let [summaryTotal, setIncomeTotalState] = useState(props.incomeTotal)
+   // let [summaryTotal, setIncomeTotalState] = useState(props.incomeTotal)
    // console.log("this is state total", props.incomeTotal);
    //
    // console.log("This is the incomeTotal", props.incomeTotal);

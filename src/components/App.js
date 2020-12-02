@@ -12,7 +12,7 @@ import { Transport } from './Transport';
 import { Children } from './Children';
 
 function App() {
-const [active, setActive] = useState("");
+
 const [incomeTotal, setIncomeTotal] = useState(0);
 
   return (

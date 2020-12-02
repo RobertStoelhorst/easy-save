@@ -34,7 +34,7 @@ export const Transport = (props) => {
   const [otherPeriod, setOtherPeriod] = useState(52);
 
   let expenseTotal = (
-    Number(busExpense * busPeriod) + Number(fuelExpense * fuelPeriod) + Number(roadExpense * roadExpense) + Number(regoExpense * regoPeriod) + Number(repairsExpense * repairsPeriod) + Number(finesExpense * finesPeriod) + Number(airfaresExpense * airfaresPeriod) + Number(otherExpense * otherPeriod)
+    Number(busExpense * busPeriod) + Number(fuelExpense * fuelPeriod) + Number(roadExpense * roadPeriod) + Number(regoExpense * regoPeriod) + Number(repairsExpense * repairsPeriod) + Number(finesExpense * finesPeriod) + Number(airfaresExpense * airfaresPeriod) + Number(otherExpense * otherPeriod)
   );
 
   return (
