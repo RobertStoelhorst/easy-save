@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import Chevron from '../components/Chevron';
+import ChevronArrow from '../components/ChevronArrow';
+import ChevronCircle from '../components/ChevronCircle';
 
 export const Transport = (props) => {
 
@@ -33,17 +34,20 @@ export const Transport = (props) => {
   const [otherExpense, setOtherExpense] = useState(0);
   const [otherPeriod, setOtherPeriod] = useState(52);
 
-  let expenseTotal = (
+  const calculateTotal = () => (
     Number(busExpense * busPeriod) + Number(fuelExpense * fuelPeriod) + Number(roadExpense * roadPeriod) + Number(regoExpense * regoPeriod) + Number(repairsExpense * repairsPeriod) + Number(finesExpense * finesPeriod) + Number(airfaresExpense * airfaresPeriod) + Number(otherExpense * otherPeriod)
   );
+
+  props.updateTransport(calculateTotal());
 
   return (
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <p className="accordian-title">Transport & auto</p>
-            <p className="result">-${expenseTotal} </p>
-            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
+            <ChevronCircle width={13} fill={"#c3eefa"} />
+            <p className="accordion-title">Transport & auto</p>
+            <p className="result">-${props.transportTotal} </p>
+            <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
           </button>
         </div>
 

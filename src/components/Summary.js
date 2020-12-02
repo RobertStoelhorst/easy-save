@@ -1,10 +1,12 @@
 import React from 'react';
 
 export const Summary = (props) => {
+  // console.log("expenseTotal", props.homeTotal);
+
   return (
     <div className="summary">
-      <h1>Summary</h1>
-      <h1>${props.incomeTotal}</h1>
+      <p className="summary-result">Summary</p>
+      <p className="summary-result">${props.incomeTotal - props.homeTotal - props.insuranceTotal - props.groceriesTotal - props.personalTotal - props.entertainmentTotal - props.transportTotal - props.childrenTotal} </p>
         <div className="message">
           <p>Your balance is in surplass</p>
           <p>Your balance is in deficit</p>

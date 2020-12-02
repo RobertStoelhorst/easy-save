@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
-import Chevron from '../components/Chevron';
+import ChevronArrow from '../components/ChevronArrow';
+import ChevronCircle from '../components/ChevronCircle';
 
 export const HomeUtils = (props) => {
+  console.log("this is props", props);
 
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -43,18 +45,21 @@ export const HomeUtils = (props) => {
   const [otherExpense, setOtherExpense] = useState(0);
   const [otherPeriod, setOtherPeriod] = useState(52);
 
-  let expenseTotal = (
+  const calculateTotal = () => (
     Number(mortgageExpense * mortgagePeriod) + Number(bodyCorpExpense * bodyCorpPeriod) + Number(councilExpense * councilPeriod) + Number(furnitureExpense * furniturePeriod) + Number(renovationExpense * renovationPeriod) + Number(electricityExpense * electricityPeriod) + Number(gasExpense * gasPeriod) + Number(waterExpense * waterPeriod) + Number(internetExpense * internetPeriod) + Number(payTVExpense * payTVPeriod) + Number(phoneExpense * phonePeriod) +
     Number(mobileExpense * mobilePeriod) + Number(otherExpense * otherPeriod)
   );
+
+  props.updateHome(calculateTotal());
 
   return (
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <p className="accordian-title">Home & utilities</p>
-            <p className="result">-${expenseTotal} </p>
-            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
+            <ChevronCircle width={13} fill={"#0146f5"} />
+            <p className="accordion-title">Home & utilities</p>
+            <p className="result">-${props.homeTotal} </p>
+            <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
           </button>
         </div>
 
@@ -64,7 +69,7 @@ export const HomeUtils = (props) => {
             <div className="category">
               <label htmlFor="text">Mortgage & rent</label>
                 <input className="input-field" type="text" onChange={ (e) => setMortgageExpense(e.target.value) } placeholder="$0" />
-                <select onChange={(e) => setMortgagePeriod(e.target.value)} className="period-list" name="" >
+                <select onChange={ (e) => setMortgagePeriod(e.target.value) } className="period-list" name="" >
                   <option value="52">Weekly</option>
                   <option value="26">Fortnightly</option>
                   <option value="12">Monthly</option>

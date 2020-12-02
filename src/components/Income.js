@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
 // import Summary from '../components/Summary';
-import Chevron from '../components/Chevron';
+import ChevronArrow from '../components/ChevronArrow';
+import ChevronCircle from '../components/ChevronCircle';
 
 export const Income = (props) => {
-  // console.log("this is props", props);
+  console.log("this is props", props);
 
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -53,9 +54,10 @@ export const Income = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <p className="accordian-title">Income anually</p>
-            <p className="result">${props.incomeTotal} </p>
-            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
+            <ChevronCircle width={13} fill={"black"} />
+            <p className="accordion-title">Income anually</p>
+            <p className="result">${props.incomeTotal}</p>
+            <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
           </button>
         </div>
 

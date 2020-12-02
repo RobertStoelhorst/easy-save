@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import Chevron from '../components/Chevron';
+import ChevronArrow from '../components/ChevronArrow';
+import ChevronCircle from '../components/ChevronCircle';
 
 export const Groceries = (props) => {
 
@@ -31,17 +32,20 @@ export const Groceries = (props) => {
   const [otherExpense, setOtherExpense] = useState(0);
   const [otherPeriod, setOtherPeriod] = useState(52);
 
-  let expenseTotal = (
+  const calculateTotal = () => (
     Number(supermarketExpense * supermarketPeriod) + Number(butcherExpense * butcherPeriod) + Number(fruitExpense * fruitPeriod) + Number(fishExpense * fishPeriod) + Number(deliExpense * deliPeriod) + Number(petExpense * petPeriod) + Number(otherExpense * otherPeriod)
   );
+
+  props.updateGroceries(calculateTotal());
 
   return (
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <p className="accordian-title">Groceries</p>
-            <p className="result">-${expenseTotal} </p>
-            <Chevron className={`${setRotate}`} width={20} fill={"#777"} />
+            <ChevronCircle width={13} fill={"#383a7b"} />
+            <p className="accordion-title">Groceries</p>
+            <p className="result">-${props.groceriesTotal} </p>
+            <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
           </button>
         </div>
 

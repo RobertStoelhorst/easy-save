@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Chevron(props) {
+function ChevronArrow(props) {
   return (
     <svg
       className={props.className}
@@ -13,4 +13,4 @@ function Chevron(props) {
   );
 }
 
-export default Chevron;
+export default ChevronArrow;

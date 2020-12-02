@@ -14,6 +14,13 @@ import { Children } from './Children';
 function App() {
 
 const [incomeTotal, setIncomeTotal] = useState(0);
+const [homeTotal, setHomeTotal] = useState(0);
+const [insuranceTotal, setInsuranceTotal] = useState(0);
+const [groceriesTotal, setGroceriesTotal] = useState(0);
+const [personalTotal, setPersonalTotal] = useState(0);
+const [entertainmentTotal, setEntertainmentTotal] = useState(0);
+const [transportTotal, setTransportTotal] = useState(0);
+const [childrenTotal, setChildrenTotal] = useState(0);
 
   return (
     <div className="container">
@@ -21,14 +28,14 @@ const [incomeTotal, setIncomeTotal] = useState(0);
         <Header />
         <Autosave />
         <Income incomeTotal={incomeTotal} updateIncome={setIncomeTotal} />
-        <HomeUtils />
-        <Insurance />
-        <Groceries />
-        <Personal />
-        <Entertainment />
-        <Transport />
-        <Children />
-        <Summary incomeTotal={incomeTotal} />
+        <HomeUtils homeTotal={homeTotal} updateHome={setHomeTotal} />
+        <Insurance insuranceTotal={insuranceTotal} updateInsurance={setInsuranceTotal} />
+        <Groceries groceriesTotal={groceriesTotal} updateGroceries={setGroceriesTotal} />
+        <Personal personalTotal={personalTotal} updatePersonal={setPersonalTotal} />
+        <Entertainment entertainmentTotal={entertainmentTotal} updateEntertainment={setEntertainmentTotal} />
+        <Transport transportTotal={transportTotal} updateTransport={setTransportTotal} />
+        <Children childrenTotal={childrenTotal} updateChildren={setChildrenTotal}/>
+        <Summary childrenTotal={childrenTotal} transportTotal={transportTotal} entertainmentTotal={entertainmentTotal} personalTotal={personalTotal} groceriesTotal={groceriesTotal} insuranceTotal={insuranceTotal} homeTotal={homeTotal} incomeTotal={incomeTotal} />
       </div>
     </div>
   );
