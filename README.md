@@ -9,7 +9,7 @@
 
 ### Version 1.0.0
 
-#### Deployed to gh-pages [GitHub](https://robertstoelhorst.github.io/easy-save/)
+#### Deployed to gh-pages [Github](https://robertstoelhorst.github.io/easy-save/)
 
 
 #### Database structure
