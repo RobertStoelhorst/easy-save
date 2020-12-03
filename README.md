@@ -1,5 +1,7 @@
 # EasySave 
 
+![](readMeImages/Title.jpeg)
+
 ## Budget Tracker App with REACT HOOKS
 
 ## Final General Assembly Project (week 12)
