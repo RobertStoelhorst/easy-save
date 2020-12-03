@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react';
-// import Summary from '../components/Summary';
 import ChevronArrow from '../components/ChevronArrow';
 import ChevronCircle from '../components/ChevronCircle';
+import CurrencyFormat from 'react-currency-format';
 
 export const Income = (props) => {
   console.log("this is props", props.yourIncome);
+  const CurrencyFormat = require('react-currency-format');
 
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -56,7 +57,7 @@ export const Income = (props) => {
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
             <ChevronCircle className={"accordion-icon"} width={13} fill={"black"} />
             <p className="accordion-title">Income anually</p>
-            <p className="result">${props.incomeTotal}</p>
+            <CurrencyFormat value={props.incomeTotal} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div className="result">{value}</div>} />
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
           </button>
         </div>

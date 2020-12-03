@@ -195,6 +195,10 @@ input:checked + .slider::before {
   border: 1px solid grey;
 }
 
+.summary-result {
+  margin: auto 0;
+}
+
 .accordion-section {
   display: flex;
   flex-direction: column;
