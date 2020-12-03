@@ -44,7 +44,7 @@ export const Transport = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"#c3eefa"} />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"#c3eefa"} />
             <p className="accordion-title">Transport & auto</p>
             <p className="result">-${props.transportTotal} </p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />

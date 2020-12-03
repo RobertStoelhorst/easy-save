@@ -42,7 +42,7 @@ export const Groceries = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"#383a7b"} />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"#383a7b"} />
             <p className="accordion-title">Groceries</p>
             <p className="result">-${props.groceriesTotal} </p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />

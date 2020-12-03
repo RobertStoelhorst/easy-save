@@ -54,7 +54,7 @@ export const Entertainment = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"#ace8fa"} />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"#ace8fa"} />
             <p className="accordion-title">Entertainment & eat-out</p>
             <p className="result">-${props.entertainmentTotal} </p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />

@@ -50,7 +50,7 @@ export const Children = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"#a3bbf9"}  />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"#a3bbf9"}  />
             <p className="accordion-title">Children</p>
             <p className="result">-${props.childrenTotal} </p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"}  />

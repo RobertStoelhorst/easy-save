@@ -52,7 +52,7 @@ export const Insurance = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"#1f1247"} />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"#1f1247"} />
             <p className="accordion-title">Insurance & financial</p>
             <p className="result">-${props.insuranceTotal} </p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />

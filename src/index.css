@@ -51,8 +51,31 @@ code {
 
 #autosave-heading {
   display: inline;
-  color: blue;
+  font-size: 18px;
+  color: #436cf6;
   margin-left: 10%;
+}
+
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 40px;
+  background-color: #efefef;
+  color: #0047f5;
+  font-size: 30px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 1px 1px 1px white inset;
+}
+
+#ellipsis {
+  margin: auto 0;
+  font-size: 45px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0047f5;
 }
 
 .switch {
@@ -196,6 +219,7 @@ input:checked + .slider::before {
 
 .accordion-icon {
   transition: transform 0s ease;
+  margin-left: 8px;
 }
 
 .rotate {

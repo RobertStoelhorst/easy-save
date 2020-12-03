@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './Header';
+import { BudgetHeading } from './BudgetHeading';
 import Autosave from './Autosave';
 import { Income } from './Income';
 import { Summary } from './Summary';
@@ -11,6 +12,7 @@ import { Entertainment } from './Entertainment';
 import { Transport } from './Transport';
 import { Children } from './Children';
 import { Switch } from './Switch';
+
 
 function App() {
 
@@ -28,6 +30,7 @@ const [childrenTotal, setChildrenTotal] = useState(0);
       <div className="app-wrapper">
         <Header />
         <Autosave />
+        <BudgetHeading />
         <Income incomeTotal={incomeTotal} updateIncome={setIncomeTotal} />
         <HomeUtils homeTotal={homeTotal} updateHome={setHomeTotal} />
         <Insurance insuranceTotal={insuranceTotal} updateInsurance={setInsuranceTotal} />

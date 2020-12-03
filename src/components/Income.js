@@ -54,7 +54,7 @@ export const Income = (props) => {
     <div className="">
         <div className="accordion-section">
           <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <ChevronCircle width={13} fill={"black"} />
+            <ChevronCircle className={"accordion-icon"} width={13} fill={"black"} />
             <p className="accordion-title">Income anually</p>
             <p className="result">${props.incomeTotal}</p>
             <ChevronArrow className={`${setRotate}`} width={20} fill={"#d3d1d9"} />
