@@ -4,7 +4,7 @@ import ChevronArrow from '../components/ChevronArrow';
 import ChevronCircle from '../components/ChevronCircle';
 
 export const Income = (props) => {
-  console.log("this is props", props);
+  console.log("this is props", props.yourIncome);
 
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -64,18 +64,17 @@ export const Income = (props) => {
         <div ref={content} style={{maxHeight: `${setHeight}`}} className="accordion-content">
           <div className="accordion-container">
             <form>
-              <div className="category">
+            <div className="category">
               <label htmlFor="text">Your take-home pay</label>
                 <input className="input-field" type="text" onChange={ (e) => setYourIncome(e.target.value) } placeholder="$0" />
-                <select onChange={ (e) => setYourPeriod(e.target.value) } className="periodList" name="">
+                <select onChange={(e) => setYourPeriod(e.target.value)} className="period-list" name="" >
                   <option value="52">Weekly</option>
                   <option value="26">Fortnightly</option>
                   <option value="12">Monthly</option>
                   <option value="4">Quarterly</option>
                   <option value="1">Annually</option>
                 </select>
-              </div>
-
+            </div>
               <div className="category">
               <label htmlFor="text">Your partner's take-home pay</label>
                 <input className="input-field" type="text" onChange={ (e) => setPartnerIncome(e.target.value)} placeholder="$0" />

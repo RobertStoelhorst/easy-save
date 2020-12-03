@@ -10,6 +10,7 @@ import { Personal } from './Personal';
 import { Entertainment } from './Entertainment';
 import { Transport } from './Transport';
 import { Children } from './Children';
+import { Switch } from './Switch';
 
 function App() {
 
