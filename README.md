@@ -1,7 +1,7 @@
 # EasySave 
 
 ####
-![](readMeImages/Title.jpeg)
+![](readMeImages/Title.png)
 
 ## Budget Tracker App with REACT HOOKS
 
