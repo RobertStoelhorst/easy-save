@@ -12,7 +12,7 @@
 #### Deployed to gh-pages [Github](https://robertstoelhorst.github.io/easy-save/)
 
 
-#### Database structure
+#### Wire structure
 
 ![](readMeImages/Wire-Structure.png)
 
