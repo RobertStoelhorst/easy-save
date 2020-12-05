@@ -26,7 +26,7 @@
 - HTML & CSS
 
 #### Summary
-This is my final General Assembly project, I came up with the idea of building this back during our second project week when I built the jokes Generator but was advised that we would be learning better Technologies and frameworks later in the course that would be more suited to this project, hence this being my first React project. I'm glad I waited because this project requried such a framework to produce the result I have achieved.  
+This is my final General Assembly project, I came up with the idea of building this back during our second project week when I built the jokes Generator but was advised that we would be learning better Technologies and frameworks later in the course that would be more suited to this project, hence this being my first React project. I'm glad I waited because this project requried such a framework to produce the result I have acheived.  
 
 The aim of this project was to build a budget planner to replicate the functionality of a budget planner I have used in the past, which can be found here [Moneysmart](https://moneysmart.gov.au/budgeting/budget-planner).
 It wasn't until a meeting with a contact on the second day who advised me that often developers are tasked to replicate something pixel for pixel.
